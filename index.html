@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#2a0f1d" />
+<title>Happy Birthday, Ajoke Motunrayo Barakah ❤️</title>
+<meta name="description" content="A birthday letter, a gallery of memories and a whole lot of love for my sister, Ajoke Motunrayo Barakah." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --rose:#e0577f;
+  --rose-deep:#b83360;
+  --rose-soft:#f7c6d6;
+  --plum:#2a0f1d;
+  --ink:#1d1015;
+  --muted:#6f5a63;
+  --cream:#fff8f5;
+  --gold:#e9bd7e;
+  --radius:22px;
+  --max:1140px;
+  --shadow:0 22px 50px -28px rgba(70,18,40,.55);
+  --font-display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  font-family:var(--font-body);
+  font-weight:400;
+  font-size:16px;
+  line-height:1.7;
+  color:var(--ink);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img,video{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.1;margin:0}
+p{margin:0 0 1.05em}
+p:last-child{margin-bottom:0}
+a{color:inherit}
+
+::selection{background:var(--rose-soft);color:var(--plum)}
+
+/* Reduced motion: kill all decorative movement */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+}
+
+/* ============================================================
+   LAYOUT HELPERS
+   ============================================================ */
+.wrap{
+  width:100%;
+  max-width:var(--max);
+  margin-inline:auto;
+  padding-inline:clamp(18px,4vw,32px);
+}
+
+section{scroll-margin-top:24px}
+
+.section-head{
+  text-align:center;
+  max-width:640px;
+  margin:0 auto clamp(34px,5vw,58px);
+}
+.section-head .eyebrow{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:var(--rose-deep);
+  margin:0 0 14px;
+}
+.section-head h2{
+  font-size:clamp(1.9rem,5vw,3.1rem);
+  color:var(--plum);
+  letter-spacing:-.01em;
+}
+.section-head p{
+  margin-top:14px;
+  color:var(--muted);
+  font-size:.98rem;
+}
+
+/* Reveal on scroll */
+[data-reveal]{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .75s cubic-bezier(.22,.7,.3,1), transform .75s cubic-bezier(.22,.7,.3,1);
+  will-change:opacity,transform;
+}
+[data-reveal].is-visible{opacity:1;transform:none}
+
+/* ============================================================
+   MEDIA LAYERS (full-bleed background videos)
+   ============================================================ */
+.media-layer{
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+  background-color:#24101a;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.media-layer video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.media-layer::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(24,8,16,.78) 0%,
+    rgba(24,8,16,.46) 42%,
+    rgba(24,8,16,.82) 100%
+  );
+  pointer-events:none;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:100vh;
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:clamp(84px,12vh,140px) 22px clamp(72px,10vh,110px);
+  background:var(--plum);
+}
+
+.hero-inner{
+  position:relative;
+  max-width:820px;
+  color:#fff;
+}
+
+.hero .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.7em;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin:0 0 clamp(18px,3vw,26px);
+}
+.hero .eyebrow::before,
+.hero .eyebrow::after{
+  content:"";
+  width:34px;
+  height:1px;
+  background:currentColor;
+  opacity:.65;
+}
+
+.hero h1{
+  font-size:clamp(2.6rem,9.5vw,6rem);
+  letter-spacing:-.015em;
+  color:#fff;
+  text-shadow:0 18px 60px rgba(0,0,0,.42);
+}
+.hero h1 .accent{
+  display:block;
+  font-style:italic;
+  font-weight:500;
+  color:var(--rose-soft);
+  font-size:.92em;
+}
+
+.hero-sub{
+  margin:clamp(18px,3vw,26px) auto 0;
+  max-width:34ch;
+  font-size:clamp(.98rem,2.2vw,1.15rem);
+  font-weight:300;
+  color:rgba(255,255,255,.88);
+}
+
+.hero-actions{
+  margin-top:clamp(28px,4vw,42px);
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  justify-content:center;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.55em;
+  padding:14px 30px;
+  border-radius:999px;
+  font-size:.88rem;
+  font-weight:500;
+  letter-spacing:.04em;
+  text-decoration:none;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease, border-color .25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--rose) 0%,var(--rose-deep) 100%);
+  color:#fff;
+  box-shadow:0 16px 34px -14px rgba(232,87,127,.8);
+}
+.btn-primary:hover{box-shadow:0 22px 42px -14px rgba(232,87,127,.95)}
+
+.btn-ghost{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.42);
+  color:#fff;
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+
+.scroll-cue{
+  position:absolute;
+  left:50%;
+  bottom:clamp(18px,3.5vh,34px);
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  font-size:.64rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+  pointer-events:none;
+}
+.scroll-cue span.line{
+  width:1px;
+  height:40px;
+  background:linear-gradient(180deg,rgba(255,255,255,.7),transparent);
+  animation:pulseLine 2.4s ease-in-out infinite;
+}
+@keyframes pulseLine{
+  0%,100%{opacity:.35;transform:scaleY(.7)}
+  50%{opacity:1;transform:scaleY(1)}
+}
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery-section{
+  padding:clamp(64px,9vw,110px) 0;
+  background:
+    radial-gradient(1100px 520px at 12% -8%, #ffe7ef 0%, transparent 62%),
+    radial-gradient(900px 480px at 92% 4%, #fff0e0 0%, transparent 60%),
+    var(--cream);
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+.gallery figure{
+  position:relative;
+  margin:0;
+  overflow:hidden;
+  border-radius:var(--radius);
+  background:#f0e2e8;
+  box-shadow:var(--shadow);
+  aspect-ratio:4/5;
+}
+
+.gallery figure img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .8s cubic-bezier(.22,.7,.3,1), filter .5s ease;
+}
+.gallery figure:hover img{transform:scale(1.06)}
+
+.gallery figure figcaption{
+  position:absolute;
+  inset:auto 0 0 0;
+  padding:44px 18px 16px;
+  font-size:.8rem;
+  letter-spacing:.06em;
+  color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(28,8,18,.82));
+  opacity:.95;
+}
+
+.gallery button{
+  all:unset;
+  display:block;
+  width:100%;
+  height:100%;
+  cursor:zoom-in;
+}
+.gallery button:focus-visible{outline:3px solid var(--rose);outline-offset:-3px;border-radius:var(--radius)}
+
+@media (min-width:560px){
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:760px){
+  .gallery{grid-template-columns:repeat(6,1fr);gap:16px}
+  .gallery figure:nth-child(1),
+  .gallery figure:nth-child(2){grid-column:span 3;aspect-ratio:4/3}
+  .gallery figure:nth-child(3),
+  .gallery figure:nth-child(4),
+  .gallery figure:nth-child(5){grid-column:span 2;aspect-ratio:3/4}
+}
+
+/* ============================================================
+   WISH CARDS
+   ============================================================ */
+.wishes-section{
+  padding:clamp(64px,9vw,110px) 0;
+  background:linear-gradient(180deg,#fff8f5 0%, #fdeef3 55%, #fff8f5 100%);
+}
+
+.wishes-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+.wish-card{
+  display:flex;
+  flex-direction:column;
+  background:#fff;
+  border:1px solid rgba(224,87,127,.16);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:transform .4s cubic-bezier(.22,.7,.3,1), box-shadow .4s ease, border-color .4s ease;
+}
+.wish-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(224,87,127,.34);
+  box-shadow:0 30px 60px -30px rgba(70,18,40,.65);
+}
+
+.wish-card .video-wrap{
+  position:relative;
+  aspect-ratio:16/9;
+  background:#1b0d14;
+  overflow:hidden;
+}
+
+.wish-card video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  background:#1b0d14;
+  border-radius:0;
+}
+
+.play-hint{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  padding:9px 20px;
+  border-radius:999px;
+  background:rgba(20,8,14,.62);
+  border:1px solid rgba(255,255,255,.28);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  color:#fff;
+  font-size:.68rem;
+  font-weight:500;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  pointer-events:none;
+  opacity:1;
+  transition:opacity .35s ease, transform .35s ease;
+}
+.wish-card.is-playing .play-hint{
+  opacity:0;
+  transform:translate(-50%,-50%) scale(.9);
+}
+
+.wish-card .card-body{
+  padding:22px 22px 26px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.wish-card .card-index{
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--rose-deep);
+}
+
+.wish-card h3{
+  font-size:clamp(1.28rem,2.6vw,1.55rem);
+  color:var(--plum);
+  letter-spacing:-.005em;
+}
+
+.wish-card p{
+  font-size:.93rem;
+  color:var(--muted);
+  line-height:1.72;
+}
+
+@media (min-width:700px){
+  .wishes-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:1040px){
+  .wishes-grid{grid-template-columns:repeat(3,1fr);gap:24px}
+}
+
+/* ============================================================
+   LETTER
+   ============================================================ */
+.letter-section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:clamp(72px,11vw,132px) 0;
+  background:var(--plum);
+}
+.letter-section .media-layer::after{
+  background:linear-gradient(
+    180deg,
+    rgba(22,7,14,.90) 0%,
+    rgba(22,7,14,.80) 40%,
+    rgba(22,7,14,.94) 100%
+  );
+}
+
+.letter-card{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  max-width:780px;
+  margin-inline:auto;
+  padding:clamp(26px,5.5vw,60px);
+  border-radius:clamp(20px,3vw,30px);
+  background:#fff8f5;
+  border:1px solid rgba(255,255,255,.6);
+  box-shadow:0 40px 90px -40px rgba(0,0,0,.75);
+}
+
+/* --- video sitting behind the letter text --- */
+.letter-card .card-media{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  border-radius:inherit;
+  background-color:#2a0f1d;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.letter-card .card-media video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:blur(3px) brightness(1.04);
+  transform:scale(1.07); /* hides blur edges */
+}
+/* cream veil so the letter stays crisp on top */
+.letter-card .card-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(
+    180deg,
+    rgba(255,249,246,.90) 0%,
+    rgba(255,246,241,.86) 45%,
+    rgba(255,249,246,.92) 100%
+  );
+}
+/* all letter content sits above the video */
+.letter-card .letter-inner{
+  position:relative;
+  z-index:1;
+}
+
+.letter-card .letter-eyebrow{
+  display:inline-block;
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--rose-deep);
+  margin:0 0 18px;
+}
+
+.letter-card h2{
+  font-size:clamp(1.7rem,4.4vw,2.6rem);
+  color:var(--plum);
+  margin-bottom:clamp(20px,3vw,30px);
+  letter-spacing:-.01em;
+}
+
+.letter-body p{
+  font-size:clamp(.95rem,1.6vw,1.03rem);
+  color:#3a2530;
+  line-height:1.85;
+  margin-bottom:1.15em;
+}
+.letter-body p:first-of-type::first-letter{
+  float:left;
+  font-family:var(--font-display);
+  font-size:3.3em;
+  line-height:.82;
+  padding:.06em .12em 0 0;
+  color:var(--rose-deep);
+}
+
+.letter-body .signature{
+  margin-top:clamp(24px,4vw,36px);
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:clamp(1.15rem,2.6vw,1.5rem);
+  color:var(--rose-deep);
+  line-height:1.5;
+}
+
+.letter-divider{
+  width:64px;
+  height:2px;
+  margin:clamp(24px,4vw,34px) auto;
+  background:linear-gradient(90deg,transparent,var(--rose),transparent);
+  border:0;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{
+  padding:clamp(46px,6vw,72px) 0 clamp(90px,10vw,110px);
+  text-align:center;
+  background:var(--plum);
+  color:rgba(255,255,255,.72);
+}
+.site-footer .heart{
+  font-size:1.5rem;
+  color:var(--rose);
+  display:block;
+  margin-bottom:14px;
+}
+.site-footer p{
+  font-size:.86rem;
+  letter-spacing:.04em;
+  margin:0;
+}
+.site-footer .footer-name{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:1.15rem;
+  color:var(--rose-soft);
+  margin-bottom:10px;
+  letter-spacing:0;
+}
+
+/* ============================================================
+   MUSIC TOGGLE
+   ============================================================ */
+.music-toggle{
+  position:fixed;
+  right:clamp(14px,3vw,24px);
+  bottom:clamp(14px,3vw,24px);
+  z-index:80;
+  width:54px;
+  height:54px;
+  display:grid;
+  place-items:center;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  color:#fff;
+  background:linear-gradient(135deg,var(--rose) 0%,var(--rose-deep) 100%);
+  box-shadow:0 16px 32px -12px rgba(184,51,96,.9), 0 0 0 1px rgba(255,255,255,.16) inset;
+  transition:transform .25s ease, box-shadow .25s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.music-toggle:hover{transform:scale(1.06)}
+.music-toggle:active{transform:scale(.97)}
+.music-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+.music-toggle .music-icon{
+  font-size:1.15rem;
+  line-height:1;
+  transform:translateY(-1px);
+}
+
+.music-toggle::before{
+  content:"";
+  position:absolute;
+  inset:-5px;
+  border-radius:50%;
+  border:2px dashed rgba(255,255,255,.55);
+  opacity:0;
+  transition:opacity .35s ease;
+}
+.music-toggle[aria-pressed="true"]::before{
+  opacity:1;
+  animation:spinRing 7s linear infinite;
+}
+@keyframes spinRing{to{transform:rotate(360deg)}}
+
+.music-toggle .sr-only{
+  position:absolute;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox{
+  position:fixed;
+  inset:0;
+  z-index:120;
+  display:grid;
+  place-items:center;
+  padding:clamp(14px,4vw,44px);
+  background:rgba(18,6,12,.92);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .3s ease, visibility .3s ease;
+}
+.lightbox.is-open{opacity:1;visibility:visible}
+
+.lightbox img{
+  max-width:min(100%, 1000px);
+  max-height:86vh;
+  width:auto;
+  height:auto;
+  border-radius:16px;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.9);
+  transform:scale(.96);
+  transition:transform .35s cubic-bezier(.22,.7,.3,1);
+}
+.lightbox.is-open img{transform:scale(1)}
+
+.lightbox-close{
+  position:absolute;
+  top:clamp(12px,3vw,26px);
+  right:clamp(12px,3vw,26px);
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.34);
+  background:rgba(255,255,255,.1);
+  color:#fff;
+  font-size:1.5rem;
+  line-height:1;
+  cursor:pointer;
+  transition:background .25s ease;
+}
+.lightbox-close:hover{background:rgba(255,255,255,.24)}
+.lightbox-close:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ============================================================
+   LITE MODE (poster-only fallback)
+   ============================================================ */
+.lite-mode .media-layer{
+  background-size:cover;
+  background-position:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero" id="top">
+  <div class="media-layer"
+       data-bg-video
+       style="background-image:url('/images/bg-hero-poster.jpg')">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/images/bg-hero-poster.jpg"
+      aria-hidden="true"
+      tabindex="-1">
+      <source src="/videos/bg-hero.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Happy Birthday</p>
+    <h1>
+      Ajoke Motunrayo
+      <span class="accent">Barakah</span>
+    </h1>
+    <p class="hero-sub">
+      My sister. My person. My gist partner. My blessing — my own blood beyond blood.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#wishes">Read my wishes</a>
+      <a class="btn btn-ghost" href="#letter">The letter</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="line"></span>
+  </div>
+</header>
+
+<!-- ============================================================
+     GALLERY — 5 PHOTOS
+     ============================================================ -->
+<section class="gallery-section" id="photos">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Our Memories</p>
+      <h2>Five moments I'd live again</h2>
+      <p>Every picture here is a day I'm grateful I got to spend with you.</p>
+    </div>
+
+    <div class="gallery">
+      <figure data-reveal>
+        <button type="button" data-lightbox="/images/photo1.jpg" data-alt="Me and my sister, one of our favourite days together">
+          <img src="/images/photo1.jpg" alt="Me and my sister, one of our favourite days together" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Us — always us.</figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <button type="button" data-lightbox="/images/photo2.jpg" data-alt="My sister laughing, the way only she can">
+          <img src="/images/photo2.jpg" alt="My sister laughing, the way only she can" loading="lazy" decoding="async">
+        </button>
+        <figcaption>That laugh. My favourite sound.</figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <button type="button" data-lightbox="/images/photo3.jpg" data-alt="A candid shot of my sister dressed up and glowing">
+          <img src="/images/photo3.jpg" alt="A candid shot of my sister dressed up and glowing" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Glowing, as always.</figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <button type="button" data-lightbox="/images/photo4.jpg" data-alt="My sister and I out together, being silly">
+          <img src="/images/photo4.jpg" alt="My sister and I out together, being silly" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Partners in everything.</figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <button type="button" data-lightbox="/images/photo5.jpg" data-alt="A quiet, happy moment with my sister">
+          <img src="/images/photo5.jpg" alt="A quiet, happy moment with my sister" loading="lazy" decoding="async">
+        </button>
+        <figcaption>My person, forever.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WISHES — 8 VIDEO MESSAGE CARDS
+     ============================================================ -->
+<section class="wishes-section" id="wishes">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Eight Little Wishes</p>
+      <h2>Things I want you to know</h2>
+      <p>Tap any video to hear it in my own voice. You deserve every single word.</p>
+    </div>
+
+    <div class="wishes-grid">
+
+      <!-- 1 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card1-poster.jpg"
+                 data-src="/videos/card1.mp4"
+                 aria-label="Video message: Happy birthday, my person"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">01</span>
+          <h3>Happy Birthday, My Person</h3>
+          <p>Where do I even start from? You are one of those people I will never get tired of appreciating. Having you in my life is one of the beautiful things I will never take for granted.</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card2-poster.jpg"
+                 data-src="/videos/card2.mp4"
+                 aria-label="Video message: Thank you for being you"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">02</span>
+          <h3>Thank You for Being YOU</h3>
+          <p>Thank you for the memories, the laughter, the random moments and the love. And for all the little things you do that you probably don't realise mean so much to me.</p>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card3-poster.jpg"
+                 data-src="/videos/card3.mp4"
+                 aria-label="Video message: My gist partner for life"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">03</span>
+          <h3>My Gist Partner for Life</h3>
+          <p>Life is beautiful when you have people who make the journey worthwhile — and you are definitely one of those people for me. Nobody gists like you. Nobody listens like you.</p>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card4-poster.jpg"
+                 data-src="/videos/card4.mp4"
+                 aria-label="Video message: My prayer for your new year"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">04</span>
+          <h3>My Prayer for Your New Year</h3>
+          <p>May God surprise you in ways you never imagined. May He answer the prayers you whisper silently, bless the efforts nobody sees, wipe away every worry and give you reasons to smile endlessly.</p>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card5-poster.jpg"
+                 data-src="/videos/card5.mp4"
+                 aria-label="Video message: May you never lack"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">05</span>
+          <h3>May You Never Lack</h3>
+          <p>Genuine love, peace, good health, favour, opportunities and financial blessings — may you never lack any of them. May you never have to beg life for the beautiful things you deserve.</p>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card6-poster.jpg"
+                 data-src="/videos/card6.mp4"
+                 aria-label="Video message: I want to see you win"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">06</span>
+          <h3>I Want to See You Win</h3>
+          <p>I want to see you happy. I want to see you fulfil every single dream in your heart. May you enter rooms where your name is mentioned for good, and may your efforts produce beautiful results.</p>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card7-poster.jpg"
+                 data-src="/videos/card7.mp4"
+                 aria-label="Video message: Many more years together"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">07</span>
+          <h3>Many More Years Together</h3>
+          <p>I want to celebrate you over and over again. I pray God grants us many more years to make beautiful memories together — kinder, sweeter and more rewarding years.</p>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="wish-card" data-reveal>
+        <div class="video-wrap">
+          <video controls playsinline preload="none"
+                 poster="/images/card8-poster.jpg"
+                 data-src="/videos/card8.mp4"
+                 aria-label="Video message: Forever and always"></video>
+          <span class="play-hint" aria-hidden="true">Tap to play</span>
+        </div>
+        <div class="card-body">
+          <span class="card-index">08</span>
+          <h3>Forever and Always</h3>
+          <p>Ajoke Motunrayo Barakah, you are deeply loved. Never forget that. I love you so much, my sister — forever and always. Happy birthday once again, my forever girl. ❤️</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LETTER — full-bleed accent bg + video inside the card
+     ============================================================ -->
+<section class="letter-section" id="letter">
+  <div class="media-layer"
+       data-bg-video
+       style="background-image:url('/images/bg-accent-poster.jpg')">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/images/bg-accent-poster.jpg"
+      aria-hidden="true"
+      tabindex="-1">
+      <source src="/videos/bg-accent.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="wrap">
+    <div class="letter-card" data-reveal>
+
+      <!-- video sitting behind the letter text -->
+      <div class="card-media"
+           data-bg-video
+           style="background-image:url('/images/letter-bg-poster.jpg')">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="/images/letter-bg-poster.jpg"
+          aria-hidden="true"
+          tabindex="-1">
+          <source src="/videos/letter-bg.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="letter-inner">
+        <p class="letter-eyebrow">A Letter For You</p>
+        <h2>To my sister, on her birthday</h2>
+
+        <div class="letter-body">
+          <p>Where do I even start from? How do I put into words what you mean to me? Sometimes, I wish words were enough to explain how much a person means to you, because honestly, you are one of those people I can never get tired of appreciating.</p>
+
+          <p>My sisterrrrr ❤️ My person, my gist partner, my blessing, my own blood beyond blood. Today, I just want you to know that having you in my life is one of the beautiful things I will never take for granted. I may not say it every day, and I may not always express it perfectly, but please never doubt how much I love and appreciate you.</p>
+
+          <p>Thank you for being YOU. Thank you for the memories, the laughter, the random moments, the love, and even the little things you do that you probably don't realise mean so much to me. Life is beautiful when you have people who make the journey worthwhile, and you are definitely one of those people for me.</p>
+
+          <p>As you add another year today, my prayer is that God will surprise you in ways you never imagined. May He answer the prayers you whisper silently, bless the efforts nobody sees, wipe away every worry and give you reasons to smile endlessly. May you never lack genuine love, peace, good health, favour, opportunities and financial blessings.</p>
+
+          <p>I pray that the coming years will be kinder, sweeter and more rewarding. May you enter rooms where your name is mentioned for good, may your efforts produce beautiful results, and may you never have to beg life for the beautiful things you deserve.</p>
+
+          <p>I want to see you win. I want to see you happy. I want to see you fulfil every single dream in your heart. I want to celebrate you over and over again, and I pray that God grants us many more years to make beautiful memories together.</p>
+
+          <p>Ajoke Motunrayo Barakah, you are deeply loved. Never forget that.</p>
+
+          <hr class="letter-divider">
+
+          <p>Happy birthday once again, my sisterrrrr! My forever girl 😭❤️ May this new chapter be everything your heart has prayed for and even more.</p>
+
+          <p class="signature">
+            I love you so much, my sister.<br>
+            Forever and always! ❤️🥹🎉
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="heart" aria-hidden="true">❤</span>
+    <p class="footer-name">For Ajoke Motunrayo Barakah</p>
+    <p>Built with love, a little code, and a whole lot of gratitude.</p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MUSIC TOGGLE
+     ============================================================ -->
+<button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Play background music">
+  <span class="music-icon" aria-hidden="true">♪</span>
+  <span class="sr-only">Background music</span>
+</button>
+
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ==========================================================
+     1. ENVIRONMENT DETECTION
+     ========================================================== */
+  var reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var reduceMotion = reduceMotionQuery.matches;
+
+  var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
+  var saveData = !!conn.saveData;
+  var effectiveType = conn.effectiveType || '';
+  var slowConnection = /(^|-)2g$/.test(effectiveType); // 'slow-2g' or '2g'
+
+  // If any of these are true, we never autoplay/stream heavy background video.
+  var liteMode = reduceMotion || saveData || slowConnection;
+
+  if (liteMode) {
+    document.documentElement.classList.add('lite-mode');
+  }
+
+  /* ==========================================================
+     2. BACKGROUND VIDEOS
+        - muted, looping, no controls, no sound
+        - paused off-screen, resumed on-screen
+        - skipped entirely in lite mode (poster shows instead)
+        - covers hero, letter section, AND letter card
+     ========================================================== */
+  var visibleBgVideos = [];
+  var bgVideos = [];
+
+  function initBackgroundVideos() {
+    var layers = document.querySelectorAll('[data-bg-video]');
+
+    Array.prototype.forEach.call(layers, function (layer) {
+      var video = layer.querySelector('video');
+      if (!video) return;
+
+      // Lite mode → remove the video element entirely so the CSS
+      // background-image poster is what the user sees.
+      if (liteMode) {
+        video.removeAttribute('src');
+        if (video.parentNode) video.parentNode.removeChild(video);
+        return;
+      }
+
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.controls = false;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+
+      // If the source fails, the poster just stays. No error UI needed.
+      video.addEventListener('error', function () {
+        video.style.opacity = '0';
+      }, { once: true });
+
+      bgVideos.push(video);
+    });
+
+    if (!bgVideos.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target;
+        var index = visibleBgVideos.indexOf(video);
+
+        if (entry.isIntersecting) {
+          if (index === -1) visibleBgVideos.push(video);
+          if (!document.hidden) {
+            var p = video.play();
+            if (p && typeof p.catch === 'function') p.catch(function () {});
+          }
+        } else {
+          if (index !== -1) visibleBgVideos.splice(index, 1);
+          video.pause();
+        }
+      });
+    }, { threshold: 0.05 });
+
+    bgVideos.forEach(function (v) { observer.observe(v); });
+  }
+
+  /* ==========================================================
+     3. CARD VIDEOS (controls, tap-to-play with sound)
+        - preload="none" + poster until the card is visible
+        - source injected only when the card enters the viewport
+        - pauses when the card scrolls away
+        - only one video plays at a time
+     ========================================================== */
+  var cardVideos = [];
+
+  function initCardVideos() {
+    cardVideos = Array.prototype.slice.call(
+      document.querySelectorAll('.wish-card video')
+    );
+    if (!cardVideos.length) return;
+
+    cardVideos.forEach(function (video) {
+      // Exclusive playback + auto-pause the music so audio never clashes.
+      video.addEventListener('play', function () {
+        cardVideos.forEach(function (other) {
+          if (other !== video && !other.paused) other.pause();
+        });
+        pauseMusic();
+
+        var card = video.closest('.wish-card');
+        if (card) card.classList.add('is-playing');
+      });
+
+      video.addEventListener('pause', function () {
+        var card = video.closest('.wish-card');
+        if (card) card.classList.remove('is-playing');
+      });
+
+      video.addEventListener('ended', function () {
+        var card = video.closest('.wish-card');
+        if (card) card.classList.remove('is-playing');
+      });
+    });
+
+    var cardObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target.querySelector('video');
+        if (!video) return;
+
+        if (entry.isIntersecting) {
+          // Lazy-load the source the first time the card is seen.
+          if (!video.dataset.loaded && video.dataset.src) {
+            video.dataset.loaded = '1';
+            video.src = video.dataset.src;
+            video.load();
+          }
+        } else if (!video.paused) {
+          // Off-screen → always pause (saves data + battery).
+          video.pause();
+        }
+      });
+    }, { threshold: 0.2 });
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll('.wish-card'),
+      function (card) { cardObserver.observe(card); }
+    );
+
+    // If the user leaves the tab, stop everything.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        cardVideos.forEach(function (v) { if (!v.paused) v.pause(); });
+      }
+    });
+  }
+
+  /* ==========================================================
+     4. MUSIC TOGGLE
+     ========================================================== */
+  var audio = null;
+  var musicBtn = document.getElementById('musicToggle');
+
+  function initMusic() {
+    if (!musicBtn) return;
+
+    audio = new Audio();
+    audio.src = '/audio/music.mp3';
+    audio.loop = true;
+    audio.preload = 'none';
+    audio.volume = 0.32;
+
+    musicBtn.addEventListener('click', function () {
+      if (!audio) return;
+
+      if (audio.paused) {
+        var p = audio.play();
+        if (p && typeof p.catch === 'function') {
+          p.then(function () { setMusicUI(true); })
+           .catch(function () { setMusicUI(false); });
+        } else {
+          setMusicUI(true);
+        }
+      } else {
+        audio.pause();
+        setMusicUI(false);
+      }
+    });
+  }
+
+  function setMusicUI(playing) {
+    if (!musicBtn) return;
+    musicBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+    musicBtn.setAttribute(
+      'aria-label',
+      playing ? 'Pause background music' : 'Play background music'
+    );
+  }
+
+  function pauseMusic() {
+    if (audio && !audio.paused) {
+      audio.pause();
+      setMusicUI(false);
+    }
+  }
+
+  /* ==========================================================
+     5. SCROLL REVEALS
+     ========================================================== */
+  function initReveals() {
+    var items = document.querySelectorAll('[data-reveal]');
+    if (!items.length) return;
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      Array.prototype.forEach.call(items, function (el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+    Array.prototype.forEach.call(items, function (el) { observer.observe(el); });
+  }
+
+  /* ==========================================================
+     6. LIGHTBOX
+     ========================================================== */
+  function initLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var closeBtn = document.getElementById('lightboxClose');
+    if (!lightbox || !lightboxImg || !closeBtn) return;
+
+    var lastFocused = null;
+
+    function open(src, alt) {
+      lastFocused = document.activeElement;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function close() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      setTimeout(function () { lightboxImg.src = ''; }, 320);
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-lightbox]'),
+      function (trigger) {
+        trigger.addEventListener('click', function () {
+          open(trigger.getAttribute('data-lightbox'), trigger.getAttribute('data-alt'));
+        });
+      }
+    );
+
+    closeBtn.addEventListener('click', close);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+    });
+  }
+
+  /* ==========================================================
+     7. TAB VISIBILITY — pause bg videos, resume on return
+     ========================================================== */
+  function initVisibilityHandling() {
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        visibleBgVideos.forEach(function (v) { v.pause(); });
+      } else {
+        visibleBgVideos.forEach(function (v) {
+          var p = v.play();
+          if (p && typeof p.catch === 'function') p.catch(function () {});
+        });
+      }
+    });
+  }
+
+  /* ==========================================================
+     8. BOOT
+     ========================================================== */
+  function boot() {
+    initBackgroundVideos();
+    initCardVideos();
+    initMusic();
+    initReveals();
+    initLightbox();
+    initVisibilityHandling();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+
+  // React live if the user flips reduced-motion mid-session.
+  if (reduceMotionQuery.addEventListener) {
+    reduceMotionQuery.addEventListener('change', function (e) {
+      if (e.matches) {
+        bgVideos.forEach(function (v) { v.pause(); });
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
