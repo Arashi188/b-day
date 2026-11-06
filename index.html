@@ -1216,11 +1216,27 @@ section{scroll-margin-top:24px}
         setMusicUI(false);
       }
     });
+
+    var autoplay = audio.play();
+    if (autoplay && typeof autoplay.then === 'function') {
+      autoplay.then(function () {
+        setMusicUI(true);
+      }).catch(function () {
+        setMusicUI(false);
+        musicBtn.setAttribute(
+          'aria-label',
+          'Play Orente by Adekunle Gold (tap to start if autoplay is blocked)'
+        );
+      });
+    } else {
+      setMusicUI(true);
+    }
   }
 
   function setMusicUI(playing) {
     if (!musicBtn) return;
     musicBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+    musicBtn.removeAttribute('title');
     musicBtn.setAttribute(
       'aria-label',
       playing ? 'Pause Orente by Adekunle Gold' : 'Play Orente by Adekunle Gold'
