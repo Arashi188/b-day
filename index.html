@@ -1136,7 +1136,7 @@ section{scroll-margin-top:24px}
         cardVideos.forEach(function (other) {
           if (other !== video && !other.paused) other.pause();
         });
-        pauseMusic();
+        if (pauseMusic()) resumeMusicAfterVideo = true;
 
         var card = video.closest('.wish-card');
         if (card) card.classList.add('is-playing');
@@ -1145,11 +1145,13 @@ section{scroll-margin-top:24px}
       video.addEventListener('pause', function () {
         var card = video.closest('.wish-card');
         if (card) card.classList.remove('is-playing');
+        resumeMusicIfVideoStopped();
       });
 
       video.addEventListener('ended', function () {
         var card = video.closest('.wish-card');
         if (card) card.classList.remove('is-playing');
+        resumeMusicIfVideoStopped();
       });
     });
 
@@ -1190,6 +1192,7 @@ section{scroll-margin-top:24px}
      ========================================================== */
   var audio = null;
   var musicBtn = document.getElementById('musicToggle');
+  var resumeMusicAfterVideo = false;
 
   function initMusic() {
     if (!musicBtn) return;
@@ -1203,6 +1206,7 @@ section{scroll-margin-top:24px}
     musicBtn.addEventListener('click', function () {
       if (!audio) return;
 
+      resumeMusicAfterVideo = false;
       if (audio.paused) {
         var p = audio.play();
         if (p && typeof p.catch === 'function') {
@@ -1247,6 +1251,27 @@ section{scroll-margin-top:24px}
     if (audio && !audio.paused) {
       audio.pause();
       setMusicUI(false);
+      return true;
+    }
+    return false;
+  }
+
+  function resumeMusicIfVideoStopped() {
+    if (!resumeMusicAfterVideo) return;
+    if (cardVideos.some(function (video) { return !video.paused; })) return;
+
+    resumeMusicAfterVideo = false;
+    if (!audio || !audio.paused) return;
+
+    var playback = audio.play();
+    if (playback && typeof playback.then === 'function') {
+      playback.then(function () {
+        setMusicUI(true);
+      }).catch(function () {
+        setMusicUI(false);
+      });
+    } else {
+      setMusicUI(true);
     }
   }
 
